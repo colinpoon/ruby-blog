@@ -1,0 +1,14 @@
+  <p style="color:blue; font-size:14px; margin-bottom: 0px;">
+      Commenter:
+    </p>
+    <strong style="color:green;">
+      <%= comment.commenter %>
+    </strong>
+    <p style="color:grey; font-size:13px; margin-top: 0px;">
+      <%= comment.body %>
+    </p>
+    <p>
+  <%= link_to 'Destroy Comment', [comment.article, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

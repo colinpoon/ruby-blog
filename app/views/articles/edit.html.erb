@@ -1,0 +1,11 @@
+<%# 
+ The method: :patch option tells Rails that we want this form to be submitted via the PATCH HTTP method which is the HTTP method you're expected to use to update resources according to the REST protocol.
+
+form_for :article, url: article_path(@article), method: :patch do |f|
+  %>
+
+<h1>Edit article</h1>
+ 
+<%= render 'form' %>
+ 
+<%= link_to 'Back', articles_path %>
